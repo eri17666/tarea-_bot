@@ -1,17 +1,32 @@
-function obtenerSaludo() {
+function obtenerSaludo(nombre) {
   const fechaActual = new Date();
   const horaActual = fechaActual.getHours();
   
+  let saludo = "";
   if (horaActual >= 6 && horaActual < 12) {
-    return "Buenos días";
+    saludo = "Buenos días";
   } else if (horaActual >= 12 && horaActual < 18) {
-    return "Buenas tardes";
+    saludo ="Buenas tardes";
   } else {
-    return "Buenas noches";
+    saludo = "Buenas noches";
   }
+  
+  if (nombre && nombre.trim() !== "") {
+    saludo += ", " + nombre.trim();
+  }
+
+  return saludo;
+
 }
-document.addEventListener("DOMContentLoaded", () => 
+document.addEventListener("DOMContentLoaded", () =>
   {
   const saludoSpan = document.getElementById('saludo-span');
+  const inputNombre = document.getElementById('nombre');
+
   saludoSpan.textContent = obtenerSaludo();;
+  inputNombre.addEventListener("input", () => {
+    saludoSpan.textContent = obtenerSaludo(inputNombre.value);
+    });
   });
+
+  

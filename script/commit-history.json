@@ -38,17 +38,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "434248ab3438d07363f8decb25129e45325c33f0",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-08-21T13:46:36.000Z",
       "message": "feat: Saludar dependiendo de la hora del día",
-      "url": "https://github.com/eri17666/tarea-_bot/commit/HEAD"
+      "url": "https://github.com/eri17666/tarea-_bot/commit/434248ab3438d07363f8decb25129e45325c33f0"
     },
     "stats": {
       "total": 19,
       "additions": 16,
       "deletions": 3,
+      "date": "2025-08-21"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-08-21T14:02:26.000Z",
+      "message": "feat: Personalizar saludo con el nombre del usuario",
+      "url": "https://github.com/eri17666/tarea-_bot/commit/HEAD"
+    },
+    "stats": {
+      "total": 29,
+      "additions": 24,
+      "deletions": 5,
       "date": "2025-08-21"
     },
     "coverage": 100,
