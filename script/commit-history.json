@@ -76,17 +76,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "fd568da71546bcab3e5ae4396b3bead07e3fb14a",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-08-26T02:46:04.000Z",
       "message": "feat: Saludar considerando género",
-      "url": "https://github.com/eri17666/tarea-_bot/commit/HEAD"
+      "url": "https://github.com/eri17666/tarea-_bot/commit/fd568da71546bcab3e5ae4396b3bead07e3fb14a"
     },
     "stats": {
       "total": 36,
       "additions": 29,
       "deletions": 7,
+      "date": "2025-08-26"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-08-26T03:03:43.000Z",
+      "message": "feat: Saludar considerando edad (>30 usa Sr./Sra.)",
+      "url": "https://github.com/eri17666/tarea-_bot/commit/HEAD"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 14,
+      "deletions": 3,
       "date": "2025-08-26"
     },
     "coverage": 100,
