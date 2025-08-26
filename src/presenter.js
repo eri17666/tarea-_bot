@@ -1,5 +1,3 @@
-import { obtenerSaludo } from "./saludador.js"
-
 function obtenerSaludo(nombre, genero, edad, idioma) {
   const fechaActual = new Date();
   const horaActual = fechaActual.getHours();
@@ -59,19 +57,21 @@ document.addEventListener("DOMContentLoaded", () =>
   const selectIdioma = document.getElementById("idioma");
 
   function actualizarSaludo() {
+    saludoSpan.textContent = obtenerSaludo(
       inputNombre.value,
       selectGenero.value,
-      parseInt(inputEdad.value) || null,
+      parseInt(inputEdad.value),
       selectIdioma.value
-      saludoSpan.textContent = obtenerSaludo(nombre, genero, edad, idioma);
-    
+    );
   }
 
+  saludoSpan.textContent = obtenerSaludo();
   inputNombre.addEventListener("input", actualizarSaludo);
   selectGenero.addEventListener("change", actualizarSaludo);
   inputEdad.addEventListener("input", actualizarSaludo);
   selectIdioma.addEventListener("change", actualizarSaludo);
 });
+  
 export { obtenerSaludo };
 
   

@@ -133,16 +133,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "38c7f3ee8b56392f130a2be24463429e1dccaf48",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-08-26T04:09:18.000Z",
       "message": "feat: implementacion test",
-      "url": "https://github.com/eri17666/tarea-_bot/commit/HEAD"
+      "url": "https://github.com/eri17666/tarea-_bot/commit/38c7f3ee8b56392f130a2be24463429e1dccaf48"
     },
     "stats": {
       "total": 92,
       "additions": 87,
+      "deletions": 5,
+      "date": "2025-08-26"
+    },
+    "coverage": 77.78,
+    "test_count": 7,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-08-26T05:19:05.000Z",
+      "message": "feat: solucionando correccionen presenter.js y pruebas test)",
+      "url": "https://github.com/eri17666/tarea-_bot/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 5,
       "deletions": 5,
       "date": "2025-08-26"
     },
