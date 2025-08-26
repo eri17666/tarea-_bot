@@ -114,12 +114,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e2cb25f9c8f3e481762be776ed6702fbff530a17",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-08-26T03:38:46.000Z",
       "message": "feat: Saludar en español e inglés",
-      "url": "https://github.com/eri17666/tarea-_bot/commit/HEAD"
+      "url": "https://github.com/eri17666/tarea-_bot/commit/e2cb25f9c8f3e481762be776ed6702fbff530a17"
     },
     "stats": {
       "total": 38,
@@ -129,6 +129,25 @@
     },
     "coverage": 100,
     "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-08-26T04:09:18.000Z",
+      "message": "feat: implementacion test",
+      "url": "https://github.com/eri17666/tarea-_bot/commit/HEAD"
+    },
+    "stats": {
+      "total": 92,
+      "additions": 87,
+      "deletions": 5,
+      "date": "2025-08-26"
+    },
+    "coverage": 77.78,
+    "test_count": 7,
     "failed_tests": 0,
     "conclusion": "success"
   }
