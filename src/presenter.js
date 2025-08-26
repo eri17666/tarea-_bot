@@ -1,4 +1,4 @@
-function obtenerSaludo(nombre) {
+function obtenerSaludo(nombre, genero) {
   const fechaActual = new Date();
   const horaActual = fechaActual.getHours();
   
@@ -12,21 +12,36 @@ function obtenerSaludo(nombre) {
   }
   
   if (nombre && nombre.trim() !== "") {
-    saludo += ", " + nombre.trim();
+    if (genero === "M") {
+      saludo += ", Sr. " + nombre.trim();
+    } else if (genero === "F") {
+      saludo += ", Sra. " + nombre.trim();
+    } else {
+      saludo += ", " + nombre.trim();
+    }
   }
 
   return saludo;
 
 }
+
 document.addEventListener("DOMContentLoaded", () =>
   {
   const saludoSpan = document.getElementById('saludo-span');
   const inputNombre = document.getElementById('nombre');
+  const selectGenero = document.getElementById("genero");
 
-  saludoSpan.textContent = obtenerSaludo();;
-  inputNombre.addEventListener("input", () => {
-    saludoSpan.textContent = obtenerSaludo(inputNombre.value);
-    });
-  });
+  function actualizarSaludo() {
+    saludoSpan.textContent = obtenerSaludo(
+      inputNombre.value,
+      selectGenero.value
+    );
+  }
+
+  saludoSpan.textContent = obtenerSaludo();
+  inputNombre.addEventListener("input", actualizarSaludo);
+  selectGenero.addEventListener("change", actualizarSaludo);
+});
+  
 
   
