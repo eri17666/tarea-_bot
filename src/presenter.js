@@ -1,14 +1,33 @@
-function obtenerSaludo(nombre, genero, edad) {
+function obtenerSaludo(nombre, genero, edad, idioma) {
   const fechaActual = new Date();
   const horaActual = fechaActual.getHours();
+
+    const textos = {
+    es: {
+      morning: "Buenos días",
+      afternoon: "Buenas tardes",
+      evening: "Buenas noches",
+      mr: "Sr.",
+      mrs: "Sra."
+    },
+    en: {
+      morning: "Good morning",
+      afternoon: "Good afternoon",
+      evening: "Good evening",
+      mr: "Mr.",
+      mrs: "Mrs."
+    }
+  };
+
+    const lang = textos[idioma] || textos["es"];
   
   let saludo = "";
   if (horaActual >= 6 && horaActual < 12) {
-    saludo = "Buenos días";
+    saludo = lang.morning;
   } else if (horaActual >= 12 && horaActual < 18) {
-    saludo ="Buenas tardes";
+    saludo = lang.afternoon;
   } else {
-    saludo = "Buenas noches";
+    saludo = lang.evening;
   }
   
   if (nombre && nombre.trim() !== "") {
@@ -35,12 +54,14 @@ document.addEventListener("DOMContentLoaded", () =>
   const inputNombre = document.getElementById('nombre');
   const selectGenero = document.getElementById("genero");
   const inputEdad = document.getElementById("edad");
+  const selectIdioma = document.getElementById("idioma");
 
   function actualizarSaludo() {
     saludoSpan.textContent = obtenerSaludo(
       inputNombre.value,
       selectGenero.value,
-      parseInt(inputEdad.value)
+      parseInt(inputEdad.value),
+      selectIdioma.value
     );
   }
 
@@ -48,6 +69,7 @@ document.addEventListener("DOMContentLoaded", () =>
   inputNombre.addEventListener("input", actualizarSaludo);
   selectGenero.addEventListener("change", actualizarSaludo);
   inputEdad.addEventListener("input", actualizarSaludo);
+  selectIdioma.addEventListener("change", actualizarSaludo);
 });
   
 
